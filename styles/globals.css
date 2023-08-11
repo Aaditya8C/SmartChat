@@ -8,3 +8,14 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+.scrollbar-none::-webkit-scrollbar {
+  display: none !important;
+  /* Safari and Chrome */
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none !important;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none !important;
+  /* Firefox */
+}
