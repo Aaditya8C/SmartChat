@@ -69,7 +69,7 @@ const MessageList = () => {
           </div>
         </div>
       )}
-      <div className="grid gap-2">
+      <div className="grid gap-2 w-full">
         {!isEmpty(messageList)
           ? messageList.map((item, index) => {
               return (
