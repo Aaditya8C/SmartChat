@@ -79,7 +79,6 @@ const MessageList = () => {
               );
             })
           : null}
-      </div>
       {loading && (
         <div className="">
           <MessageSkeleton />
@@ -92,6 +91,7 @@ const MessageList = () => {
           <MessageSkeleton />
         </div>
       )}
+      </div>
       {
         error && (
           <p className="text-white text-lg">Seems like there is some issue.Please refresh the page.</p>
