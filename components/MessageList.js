@@ -56,9 +56,9 @@ const MessageList = () => {
   const load = true;
 
   return (
-    <div className="max-h-[calc(100vh-180px)] max-w-[90%]  lg:max-w-[55%] flex mx-auto overflow-y-scroll scrollbar-none py-4">
+    <div className="max-h-[calc(100vh-158px)] lg:max-h-[calc(100vh-180px)] max-w-[90%]  lg:max-w-[55%] flex mx-auto overflow-y-scroll scrollbar-none py-4">
       {!inView && !isEmpty(messageList) && isEmpty(error) && (
-        <div className="absolute inset-x-0 bottom-24 md:bottom-28 flex justify-center items-center">
+        <div className="absolute inset-x-0 bottom-20 md:bottom-28 flex justify-center items-center">
           <div
             className="bg-[#161616] hover:bg-[#272626] transition-all duration-300 md:cursor-pointer text-white py-3 px-4 rounded-full text-sm"
             onClick={() =>
