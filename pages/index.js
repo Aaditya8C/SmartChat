@@ -18,7 +18,7 @@ export default function Home() {
       style={{ backgroundImage: `url(${ChatLogo.src})` }}
     >
       <Header />
-      <div className="h-[calc(100vh-60px)] w-full ">
+      <div className="h-[calc(100vh-70px)] w-full ">
         {session ? (
           <div className={classNames(session ? "block" : "hidden")}>
             <MessageList />
