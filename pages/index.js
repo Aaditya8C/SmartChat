@@ -13,12 +13,12 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   const { data: session } = useSession();
   return (
-    <div className="">
+    <div
+      className="h-screen relative"
+      style={{ backgroundImage: `url(${ChatLogo.src})` }}
+    >
       <Header />
-      <div
-        className=" h-[calc(100vh-81px)] w-full relative "
-        style={{ backgroundImage: `url(${ChatLogo.src})` }}
-      >
+      <div className="h-[calc(100vh-60px)] w-full ">
         {session ? (
           <div className={classNames(session ? "block" : "hidden")}>
             <MessageList />
@@ -32,7 +32,7 @@ export default function Home() {
             )}
           >
             <div className="grid gap-4 text-center">
-              <p className="text-3xl text-white font-semibold">
+              <p className="text-2xl lg:text-3xl text-white font-semibold">
                 Sign in with GitHub to join the chat!
               </p>
               <Link
