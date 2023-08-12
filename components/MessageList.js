@@ -60,7 +60,7 @@ const MessageList = () => {
       {!inView && !isEmpty(messageList) && isEmpty(error) && (
         <div className="absolute inset-x-0 bottom-20 md:bottom-28 z-50 flex justify-center items-center">
           <div
-            className="bg-[#161616] hover:bg-[#272626] transition-all duration-300 md:cursor-pointer text-white py-3 px-4 rounded-full text-sm"
+            className="bg-[#161616] hover:bg-[#272626] transition-all duration-300 lg:cursor-pointer text-white py-3 px-4 rounded-full text-sm"
             onClick={() =>
               entry?.target.scrollIntoView({ behavior: "smooth", block: "end" })
             }
