@@ -48,7 +48,7 @@ const ChatBox = () => {
           </div>
           <button
             // type="submit"
-            className="bg-[#262626] rounded-md p-3 md:p-4 w-1/4 cursor-pointer hover:bg-[#414040] transition-all duration-300"
+            className="bg-[#262626] rounded-md p-3 md:p-4 w-1/4 lg:cursor-pointer hover:bg-[#414040] transition-all duration-300"
             // onClick={session ? () => signOut("github") : () => signIn("github")}
           >
             <p className="font-semibold text-lg">Send</p>
